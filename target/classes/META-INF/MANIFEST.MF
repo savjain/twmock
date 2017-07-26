@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: MockEAST
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: sav
+Implementation-Vendor-Id: com.tw.mock.east
+Build-Jdk: 1.8.0_131
+Implementation-URL: http://projects.spring.io/spring-boot/MockEAST/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
