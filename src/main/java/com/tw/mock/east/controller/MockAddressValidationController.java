@@ -18,7 +18,7 @@ import com.tw.mock.east.model.ValidationRequest;
 @RequestMapping("/validate")
 public class MockAddressValidationController {
 	
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<Collection<ValidAddress>> validate(@RequestBody ValidationRequest request) {
 		return new ResponseEntity<>(getMockResponse(request), HttpStatus.OK);
 	}
