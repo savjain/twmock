@@ -25,7 +25,16 @@ public class MockAddressValidationController {
 
 	private Collection<ValidAddress> getMockResponse(ValidationRequest request) {
 		List<ValidAddress> response = new ArrayList<>();
-		ValidAddress add1 = ValidAddress.createInstance().routeType("RT-001").percentMatch(100).address(request.getAddress());
+		ValidAddress add1 = ValidAddress.createInstance()
+				.routeType("RT-001")
+				.streetNumber(request.getStreetNumber())
+				.streetNumberSuffix(request.getStreetNumberSuffix())
+				.locality(request.getLocality())
+				.postCode(request.getPostCode())
+				.propertyName(request.getPropertyName())
+				.addressId(12412431)
+				.ESA("PITT")
+				.confirmed(true);
 		response.add(add1);
 		return response;
 	}
